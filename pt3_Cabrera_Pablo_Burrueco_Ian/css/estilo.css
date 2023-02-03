@@ -8,4 +8,20 @@ hr.border {
     text-decoration: none;
     margin: 8px;
     color: black;
-  }
+}
+.side-bar {
+    display: inline-block;
+}
+.main-content {
+    display: inline-block;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+img {
+    width: 50%;
+    height: auto;
+}
+  
