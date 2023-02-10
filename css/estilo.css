@@ -13,49 +13,51 @@ hr.border {
     color: black;
 }
 
+.nav-menu:hover {
+    color: green;
+    text-decoration: none;
+}
+
 .side-bar {
     text-align: center;
 }
 
-.about-me {
-    
+.about-descript {
+    color: gray;
 }
 
 .author-image {
     max-width: 100%;
 }
 
-.d-flex {
-    display: flex;
+.advertisement {
+    background: lightgray;
+}
+
+.adv-linked {
+    background: #7ABA96;
 }
 
 .main-container {
     padding: 1% 5%;
 }
 
-.row {
-    display: flex;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
 .post-container {
     padding: 4%;
 }
 
-.post-title {
+h5 {
     text-align: center;
+}
+
+.post-title {
     font-weight: bold;
+    color: black;
+}
+
+.post-title:hover {
+    text-decoration: none;
+    color: #7ABA96;
 }
 
 .post-date {
@@ -86,5 +88,10 @@ img {
     margin: 15px;
     line-height: 5;
     text-align: center;
-    color:white
+    color: white
+}
+
+.foot-menu:hover {
+    text-decoration: none;
+    color: #7ABA96;
 }
