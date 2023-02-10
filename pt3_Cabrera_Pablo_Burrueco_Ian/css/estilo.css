@@ -1,27 +1,70 @@
-header, nav {
+header,
+nav {
     text-align: center;
 }
+
 hr.border {
     border-top: 1px solid #8A8070;
 }
+
 .nav-menu {
     text-decoration: none;
     margin: 8px;
     color: black;
 }
+
 .side-bar {
     display: inline-block;
+    text-align: center;
 }
-.main-content {
-    display: inline-block;
-}
-.container {
+
+.d-flex {
     display: flex;
-    flex-wrap: wrap;
 }
-  
-img {
+
+.main-container {
+    display: flex;
+    padding: 1% 5%;
+}
+
+.row {
+    display: flex;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-6 {
     width: 50%;
-    height: auto;
 }
-  
+
+.col-9 {
+    width: 75%;
+}
+
+.post-container {
+    padding: 4%;
+}
+
+.post-title {
+    text-align: center;
+}
+
+.post-date {
+    text-align: center;
+    border-top: solid green 1px;
+    border-bottom: solid green 1px;
+}
+
+.post-description {
+    text-align: justify;
+}
+
+.post-image {
+    max-width: 100%;
+}
+
+img {
+    object-fit: contain;
+}

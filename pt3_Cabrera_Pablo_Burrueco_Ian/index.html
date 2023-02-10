@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Delicias Kitchen</title>
     <link rel="shortcut icon" type="image/x-icon" href="imagenes/Logo-Delicias.png">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
     <header>
         <img src="imagenes/delicias.png" alt="delicias.com">
@@ -18,23 +20,65 @@
         <a class="nav-menu" href="">OTRAS COSAS</a>
     </nav>
     <hr class="border">
-    <div class="side-bar">
-        <p>Sobre mí</p>
-        <img src="imagenes/isagil.png">
-    </div>
-    <div class="main-content">
-        <div class="container">
-            <div>
-                <img src="imagenes/Pasta.jpg">
-            </div>
-            <div>
-                <img src="imagenes/galletas.jpg">
-            </div>
-            <div>
-                <img src="imagenes/mijo.jpg">
-            </div>
-            <img src="imagenes/calabacines.jpg">
+
+    <div class="main-container">
+        <div class="side-bar col-3">
+            <p>Sobre mí</p>
+            <img src="imagenes/isagil.png">
         </div>
-    </div> 
+
+        <div class="col-9">
+            <div class="row">
+                <div class="post-container col-6">
+                    <div class="image-container">
+                        <img src="imagenes/Pasta.jpg" class="post-image">
+                    </div>
+                    <h4 class="post-title">Pasta con salsa de coliflor y pimienta de Jamaica</h4>
+                    <div class="post-date">
+                        13 marzo, 2019
+                    </div>
+                    <p class="post-description">Una salsa vegana para la pasta, tan sabrosa y cremosa que resulta
+                        irresistible! Está elaborada
+                        con coliflor y con otros ingredientes vegetales, que la convierten en ...</p>
+                </div>
+                <div class="post-container col-6">
+                    <div class="image-container">
+                        <img src="imagenes/mijo.jpg" class="post-image">
+                    </div>
+                    <h4 class="post-title">Mijo cremoso con lentejas, hortalizas y shiitake</h4>
+                    <div class="post-date">1 febrero, 2019</div>
+                    <p class="post-description">Un buen plato de mijo cremoso con lentejas y hortalizas es todo lo que
+                        necesitas para templar el
+                        cuerpo este invierno! Delicioso y fácil!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="post-container col-6">
+                    <div class="image-container">
+                        <img src="imagenes/galletas.jpg" class="post-image">
+                    </div>
+                    <h4 class="post-title">Galletas de avena, rosa y lima</h4>
+                    <div class="post-date">12 febrero, 2019</div>
+                    <p class="post-description">Galletitas para San Valentín? Estas galletas ricas y crujientes,
+                        elaboradas con avena y con un
+                        rico sabor a rosa y lima son perfectas para celebrarlo!</p>
+                </div>
+                <div class="post-container col-6">
+                    <div class="image-container">
+                        <img src="imagenes/calabacines.jpg" class="post-image">
+                    </div>
+                    <h4 class="post-title">Calabacines rellenos de arroz negro y calabaza</h4>
+                    <div class="post-date">18 diciembre, 2019</div>
+                    <p class="post-description">Estos calabacines rellenos de arroz negro y calabaza que te propongo
+                        hoy, son la última receta
+                        que publico en el blog en...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
 </body>
+
 </html>
