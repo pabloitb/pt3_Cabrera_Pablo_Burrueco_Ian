@@ -26,6 +26,7 @@ hr.border {
     display: flex;
     padding: 1% 5%;
 }
+<<<<<<< HEAD
 
 .row {
     display: flex;
@@ -36,6 +37,15 @@ hr.border {
 }
 
 .col-6 {
+=======
+.dishes {
+    text-decoration: none;
+    margin: 8px;
+    color: black;
+    font-weight: bold;
+  
+img {
+>>>>>>> cef3d1a5ecb0396ca34afa2e6d8479ce7e09a1cf
     width: 50%;
 }
 
