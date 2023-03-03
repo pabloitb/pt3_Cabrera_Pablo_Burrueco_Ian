@@ -95,3 +95,30 @@ img {
     text-decoration: none;
     color: #7ABA96;
 }
+
+.ingredients {
+    text-align: left;
+    margin-left: 1.5%;
+    background-color: #c6bbb9;
+}
+
+.ing-list {
+    margin-left: 1%;
+    padding: 1%;
+    background-color:   #c6bbb9
+}
+
+.instructions {
+    text-align: left;
+    margin-left: 1.5%;
+    padding-top: 1%;
+}
+
+.steps {
+    margin-left: 1%;
+    padding: 1%;
+}
+
+.border2 {
+    border-top: 1px solid black;
+}
