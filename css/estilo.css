@@ -78,6 +78,15 @@ img {
     object-fit: contain;
 }
 
+.icon {
+    max-width: 100%;
+}
+
+.padding-delete {
+    padding: 0;
+}
+
+
 .footer {
     height: 100%;
     background-color: black
@@ -105,7 +114,7 @@ img {
 .ing-list {
     margin-left: 1%;
     padding: 1%;
-    background-color:   #c6bbb9
+    background-color: #c6bbb9
 }
 
 .instructions {
@@ -122,3 +131,4 @@ img {
 .border2 {
     border-top: 1px solid black;
 }
+
