@@ -122,3 +122,7 @@ img {
 .border2 {
     border-top: 1px solid black;
 }
+
+.ready {
+    margin-left: 0.3%;
+}
