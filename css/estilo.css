@@ -53,10 +53,11 @@ h5 {
 .post-title {
     font-weight: bold;
     color: black;
+    text-decoration: none;
 }
 
 .post-title:hover {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #7ABA96;
 }
 
@@ -79,7 +80,7 @@ img {
 }
 
 .icon {
-    max-width: 100%;
+    width: 50px;
 }
 
 .padding-delete {
@@ -132,13 +133,102 @@ img {
     border-top: 1px solid black;
 }
 
-<<<<<<< HEAD
-=======
-.ready {
-    margin-left: 0.3%;
+.recipe-list-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 35px;
 }
 
-.ing-type {
-    text-align: left;
+.recipe-list-item {
+    margin-top: 15px;
+    border: 2px solid #7ABA96;
+    border-radius: 10px;
+    max-width: 1140px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
 }
->>>>>>> f5e5dff0ba380e44939963bbb9482fdd595ddfbb
+  
+  
+.recipe-list-item:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #7ABA96;
+    opacity: 0.3;
+}
+
+.recipe-list-item:hover .post-title {
+    color: #7ABA96;
+}
+
+.row.recipe-list-item .col-md-1 {
+    display: grid;
+    padding: 0;
+    align-self: center;
+    justify-self: center !important;
+}
+
+.recipe-list-item .col-md-2 {
+    padding: 0;
+    font-weight: bold;
+}
+
+.recipe-list-item .col-8 {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipe-list-item .col-md-9 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.recipe-list-item .col-md-9 p{
+    align-self: center;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.recipe-list-item p {
+    margin: 0;
+    color: black
+}
+
+.recipe-list-item .col-12 {
+    justify-content: center;
+}
+
+.page-link {
+    color: #7ABA96 !important;
+    
+}
+
+.page-link:hover {
+    background-color: #d0e2d9 !important;
+    border-color: green !important;
+    color: #fff;
+}
+
+.page-item.active .page-link{
+    background-color: #7ABA96 !important;
+    border-color: green !important;
+    color: #fff !important;
+}
+
+
+@media (min-width: 1000px) {
+    .recipe-list-item {
+      min-width: 1140px;
+      min-height: 267px;
+      align-items: center;
+    }
+  }
