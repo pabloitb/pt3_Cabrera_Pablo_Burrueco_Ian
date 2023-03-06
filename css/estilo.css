@@ -3,18 +3,23 @@ nav {
     text-align: center;
 }
 
+.header-image {
+    z-index: 10;
+}
+
 hr.border {
-    border-top: 1px solid #8A8070;
+    border-top: 1px solid #305234;
 }
 
 .nav-menu {
     text-decoration: none;
     margin: 8px;
-    color: black;
+    color: #198648;
 }
 
 .nav-menu:hover {
     color: green;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -43,6 +48,9 @@ hr.border {
 }
 
 .post-container {
+    border: 1px solid #8ba890;
+    border-radius: 10px;
+    background-color: rgba(113, 158, 130, 0.6);
     padding: 4%;
 }
 
@@ -106,32 +114,6 @@ img {
     color: #7ABA96;
 }
 
-.ingredients {
-    text-align: left;
-    margin-left: 1.5%;
-    background-color: #c6bbb9;
-}
-
-.ing-list {
-    margin-left: 1%;
-    padding: 1%;
-    background-color: #c6bbb9
-}
-
-.instructions {
-    text-align: left;
-    margin-left: 1.5%;
-    padding-top: 1%;
-}
-
-.steps {
-    margin-left: 1%;
-    padding: 1%;
-}
-
-.border2 {
-    border-top: 1px solid black;
-}
 
 .recipe-list-items {
     display: flex;
@@ -143,12 +125,13 @@ img {
 
 .recipe-list-item {
     margin-top: 15px;
-    border: 2px solid #7ABA96;
+    border: 2px solid #8ba890;
     border-radius: 10px;
     max-width: 1140px;
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
+    background-color: rgba(105, 141, 46, 0.3);
 }
   
   
@@ -160,7 +143,7 @@ img {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-color: #7ABA96;
+    background-color: #7ABA96 !important;
     opacity: 0.3;
 }
 
@@ -209,7 +192,7 @@ img {
 
 .page-link {
     color: #7ABA96 !important;
-    
+    background: #a76f1c !important;
 }
 
 .page-link:hover {
@@ -231,4 +214,225 @@ img {
       min-height: 267px;
       align-items: center;
     }
-  }
+
+    .recipe-image {
+        min-width: 720px;
+        z-index: 10;
+    }
+
+    .recipe-image-post {
+        min-width: 716px;
+    }
+
+    .ingredients {
+        min-width: 720px;
+        max-width: 720px;
+    }
+
+    .ing-list {
+        min-width: 720px;
+        max-width: 720px;
+    }
+}
+
+.recipe-all-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-image {
+    max-width: 720px;
+    border: 2px solid #7ABA96;
+}
+
+.recipe-title {
+    color: #198648;
+}
+
+.ingredients {
+    text-align: center;
+    background-color: #d0e2d7;
+    border: 2px solid #7ABA96;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ing-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    border: 2px solid #7ABA96;
+    background-color: #d0e2d7;
+    padding: 10px;
+}
+
+.instructions {
+    text-align: left;
+    margin-left: 1.5%;
+    padding-top: 1%;
+}
+
+.steps {
+    margin-left: 1%;
+    padding: 1%;
+}
+
+.border2 {
+    border-top: 1px solid black;
+}
+
+
+.button-check {
+    display: block;
+    padding-left: 5%;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+  
+.list-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20%;
+}
+  
+.button-check:hover input ~ .list-check {
+    background-color: #7ABA96;
+}
+  
+.button-check input:active ~ .list-check {
+    background-color: #7ABA96;
+}
+  
+.button-check input:checked ~ .list-check {
+    background-color: green;
+}
+
+.darkmode-script {
+    width: 125px;
+    height: 55px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+.darkmode-script:after {
+    content: "";
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.darkmode-input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.darkmode-input:checked + .darkmode-script {
+    background: #242424;
+}
+
+.darkmode-input:checked + .darkmode-script:after {
+    left: 122px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+}
+
+.darkmode-script, .darkmode-script:after {
+    transition: 0.3s;
+}
+
+.darkmode-script:active:after {
+    width: 65px;
+}
+
+.background-theme  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: -10;
+    transition: 3s;
+}
+
+.darkmode-input:checked ~ .background-theme {
+    background: #242424;
+}
+
+.theme-container{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.theme {
+    display: flex;
+    position: absolute;
+}
+
+.darkmode-script svg {
+    position: absolute;
+    width: 120px;
+    max-width: 45px;
+    max-height: 45px;
+    z-index: 100;
+}
+
+.darkmode-script .sun {
+    left: 5px;
+    top: 5px;
+    color: #198648;
+    transition: 3s;
+}
+.darkmode-script .moon {
+    left: 75px;
+    top: 5px;
+    color: rgba(0, 0, 0, 0);
+    transition: 3s;
+}
+
+.darkmode-input:checked + .darkmode-script svg.sun {
+    color: rgba(0, 0, 0, 0);
+}
+
+.darkmode-input:checked + .darkmode-script svg.moon {
+    color: #198648;
+}
+
+.bit-of-space {
+    margin: 20px;
+}
+
+.lot-of-space {
+    margin: 200px;
+}
+
+.contact-form {
+    border: 2px solid #7ABA96;
+    padding: 10px;
+}
